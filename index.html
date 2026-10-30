@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="8XA0eQzhQuul_CpsyWEkqmE0WfUZyyt4OoV2JHrAN-o" />
+<title>BAB AL FALAH Backups</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 2rem 1rem; line-height: 1.55; color: #1f2328; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+  .sub { color: #57606a; margin-top: 0; }
+  li { margin: .3rem 0; }
+  footer { margin-top: 2.5rem; font-size: .9rem; color: #57606a; }
+</style>
+</head>
+<body>
+<h1>BAB AL FALAH Backups</h1>
+<p class="sub">A private backup utility used only by BAB AL FALAH for its own records.</p>
+
+<p>BAB AL FALAH Backups keeps an off-site copy of BAB AL FALAH's own accounting
+system backups in BAB AL FALAH's own Google Drive. It is an internal tool. It is
+not offered to the public and has no other users.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Each backup is encrypted on BAB AL FALAH's own computer with AES-256-GCM
+      <strong>before</strong> anything is uploaded. Google Drive only ever receives
+      encrypted files.</li>
+  <li>The encryption key never leaves BAB AL FALAH's computer and its offline
+      recovery copy.</li>
+  <li>The app uses only the Google Drive permission
+      <code>https://www.googleapis.com/auth/drive.file</code>, which lets it see and manage
+      only the files it creates itself. It cannot see any other file in the Drive.</li>
+  <li>After each upload it checks the copy in Google Drive against the original and
+      it never deletes or replaces a backup.</li>
+</ul>
+
+<p><a href="privacy.html">Privacy policy</a></p>
+
+<footer>BAB AL FALAH Backups &middot; internal use only</footer>
+</body>
+</html>
